@@ -29,6 +29,9 @@ const Formulario = () => {
       email: Yup.string()
         .email('E-mail inválido')
         .required('O campo é obrigatório'),
+      cidade: Yup.string()
+        .min(4, 'Cidade inválida')
+        .required('o campo é obrigatório'),
       telefone: Yup.string()
         .min(11, 'Telefone inválido')
         .required('O campo é obrigatório')
@@ -102,6 +105,7 @@ const Formulario = () => {
             value={form.values.cidade}
             onChange={form.handleChange}
             onBlur={form.handleBlur}
+            className={checkInputError('cidade') ? 'error' : ''}
           />
         </Campo>
         <Campo>
@@ -114,6 +118,7 @@ const Formulario = () => {
             value={form.values.telefone}
             onChange={form.handleChange}
             onBlur={form.handleBlur}
+            className={checkInputError('telefone') ? 'error' : ''}
           />
         </Campo>
         <ButtonContainer>

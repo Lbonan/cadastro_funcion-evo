@@ -1,46 +1,107 @@
-# Getting Started with Create React App
+# Cadastro de Funcionários ☀️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🔗 Link da produção: https://cadastro-funcion-evo.vercel.app/
+<hr>
 
-## Available Scripts
+## ✨Funcionalidades
+- **📝 Adicionar Funcionários**  
+  Cadastro de funcionários com nome, e-mail, cidade e telefone.
 
-In the project directory, you can run:
+- **🔍 Filtro por nome**  
+  Campo de busca para localizar profissionais cadastrados.
 
-### `npm start`
+- **🗑️ Remover e Editar Funcionários**  
+  Possibilidade de editar ou excluir um funcionário da lista.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Tecnologias Utilizadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React** — Biblioteca JavaScript para criação de interfaces de usuário.
+  - **React Redux** — Integração do Redux ao React.
+  - **React Router DOM** — Gerenciamento de rotas.
+  - **React Toastify** — Exibição de notificações de sucesso e erro.
+- **Redux Toolkit** — Gerenciamento de estado global.
+- **Styled Components** — Estilização dos componentes.
+- **TypeScript** — Superset do JavaScript com tipagem estática.
+- **Formik + Yup** — Manipulação e validação de formulários.
+<hr>
 
-### `npm test`
+## 📁 Estrutura de Pastas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+````csharp
+src/
+│
+├── assets/                    # Recursos como imagens e ícones
+│
+├── components/                # Componentes reutilizáveis
+│   ├── EmployeeCard/          # Cartão com informações do funcionário
+│   └── Header/                # Cabeçalho da aplicação
+│
+├── containers/                # Componentes de tela com lógica
+│   ├── EmployeeList/          # Lista de funcionários com filtro
+│   └── Form/                  # Formulário de cadastro/edição
+│
+├── models/                    # Modelos e classes TypeScript
+│   └── FuncionariosClass.ts   # Classe que representa um funcionário
+│
+├── pages/                     # Páginas principais da aplicação (rotas)
+│   └── index.tsx              # Página inicial
+│
+├── store/                     # Configuração e reducers do Redux
+│   ├── reducers/
+│   │   ├── filtro.ts          # Slice responsável pelo filtro de busca
+│   │   └── funcionarios.ts    # Slice responsável pelos funcionários
+│   └── index.tsx              # Configuração principal da store
+│
+├── styles.ts                  # Estilos globais e temas
+├── App.tsx                    # Componente raiz com as rotas
+└── index.tsx                  # Ponto de entrada da aplicação
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`````
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📌 Observações
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> ⚠️ Este projeto ainda **não possui integração com back-end** nem **banco de dados**.  
+> Todas as informações de funcionários são mantidas **localmente** na store do Redux.  
+> Por esse motivo, **os dados não são persistidos ao atualizar a página**.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Melhorias Futuras
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Integração com uma **API back-end** para persistência de dados.
+- Adição de **validação de e-mail duplicado** ou CPF (caso seja implementado).
+- Implementação de **autenticação de usuário**.
+- Adicionar **modal de confirmação** antes de remover um funcionário.
+- Testes automatizados com **Jest** ou **React Testing Library**.
+
+
+<hr>
+
+## 🚀 Como Clonar e Executar o Projeto
+
+1.**Clone o repositório:**
+```bash
+https://github.com/Lbonan/cadastro_funcion-evo.git
+```
+2.**Navegue até a pasta do projeto:**
+```bash
+cd funcionarios-evo
+```
+3.**Instale as dependências:**
+```bash
+npm install
+```
+4.**Execute o projeto em modo de desenvolvimento:**
+```bash
+npm start
+```
+O projeto será iniciado no endereço http://localhost:3000.
+
+
+
+Feito com 💙 por Lucas Bonan

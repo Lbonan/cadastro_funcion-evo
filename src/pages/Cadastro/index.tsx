@@ -1,4 +1,4 @@
-import Formulario from '../../../containers/Form'
+import Formulario from '../../containers/Form'
 
 const Cadastro = () => (
   <>

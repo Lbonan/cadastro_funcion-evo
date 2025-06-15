@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
-import FuncionariosClass from '../../models/FuncionariosClass'
 import { useDispatch } from 'react-redux'
+
+import FuncionariosClass from '../../models/FuncionariosClass'
+
+import { editar, remover } from '../../store/reducers/funcionarios'
 
 import * as S from './styles'
 import { Button, ButtonRemove, ButtonSave } from '../../styles'
-import { editar, remover } from '../../store/reducers/funcionarios'
 
 type Props = FuncionariosClass
 

@@ -1,12 +1,13 @@
 import { useFormik } from 'formik'
 import { toast } from 'react-toastify'
 import * as Yup from 'yup'
-import { cadastrar } from '../../store/reducers/funcionarios'
-
 import { useDispatch, useSelector } from 'react-redux'
+
+import { cadastrar } from '../../store/reducers/funcionarios'
+import { RootReducer } from '../../store'
+
 import { BackButton, ButtonContainer, Campo, FormContainer } from './styles'
 import { ButtonSave } from '../../styles'
-import { RootReducer } from '../../store'
 
 const Formulario = () => {
   const dispatch = useDispatch()

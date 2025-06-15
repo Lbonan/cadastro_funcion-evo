@@ -1,4 +1,4 @@
-import { HeaderContainer } from './style'
+import { HeaderContainer } from './styles'
 import logo from '../../assets/images/Logotipo_EvoSolar.png'
 
 const Header = () => {

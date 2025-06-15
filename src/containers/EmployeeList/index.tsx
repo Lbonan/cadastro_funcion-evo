@@ -1,8 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux'
+
+import EmployeeCard from '../../components/EmployeeCard'
+
 import { ButtonLink, MainContainer } from '../../styles'
 import { Infos, SearchContainer } from './styles'
+
 import { RootReducer } from '../../store'
-import EmployeeCard from '../../components/EmployeeCard'
 import { alteraTermo } from '../../store/reducers/filtro'
 
 const EmployeeList = () => {

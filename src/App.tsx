@@ -5,7 +5,7 @@ import Header from './components/Header'
 
 import { GlobalCss } from './styles'
 import Home from './pages/Home'
-import Cadastro from './pages/Home/Cadastro'
+import Cadastro from './pages/Cadastro'
 import { ToastContainer } from 'react-toastify'
 
 const rotes = createBrowserRouter([
